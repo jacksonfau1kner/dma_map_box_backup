@@ -1,7 +1,6 @@
 {
   "name": "clustering-map",
   "version": "0.1.0",
-  "private": false,
   "homepage": "https://jfaulkner.github.io/dma_map_box_backup",
   "type": "module",
   "scripts": {
@@ -37,6 +36,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/gh-pages": "^6",
+    "@types/node": "^24.1.0",
     "@typescript-eslint/eslint-plugin": "^8.24.0",
     "@typescript-eslint/parser": "^8.24.0",
     "@vitejs/plugin-react": "^4.3.4",

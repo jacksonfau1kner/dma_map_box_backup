@@ -40,6 +40,7 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/react", "virtual:3719237696b6c5827ddebc1c313604e42dddf505fadf2a2276d2c2cc13741dccc8564e95550ee4e9ba57ebf906f651ce2ed3283b9e6a839b54b46e378d942d5b#npm:11.2.7"],\
           ["@testing-library/user-event", "virtual:3719237696b6c5827ddebc1c313604e42dddf505fadf2a2276d2c2cc13741dccc8564e95550ee4e9ba57ebf906f651ce2ed3283b9e6a839b54b46e378d942d5b#npm:12.8.3"],\
           ["@types/gh-pages", "npm:6.1.0"],\
+          ["@types/node", "npm:24.1.0"],\
           ["@typescript-eslint/eslint-plugin", "virtual:3719237696b6c5827ddebc1c313604e42dddf505fadf2a2276d2c2cc13741dccc8564e95550ee4e9ba57ebf906f651ce2ed3283b9e6a839b54b46e378d942d5b#npm:8.24.0"],\
           ["@typescript-eslint/parser", "virtual:3719237696b6c5827ddebc1c313604e42dddf505fadf2a2276d2c2cc13741dccc8564e95550ee4e9ba57ebf906f651ce2ed3283b9e6a839b54b46e378d942d5b#npm:8.24.0"],\
           ["@vitejs/plugin-react", "virtual:3719237696b6c5827ddebc1c313604e42dddf505fadf2a2276d2c2cc13741dccc8564e95550ee4e9ba57ebf906f651ce2ed3283b9e6a839b54b46e378d942d5b#npm:4.3.4"],\
@@ -2726,6 +2727,14 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:14.14.31"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:24.1.0", {\
+        "packageLocation": "../../../../../.yarn/berry/cache/@types-node-npm-24.1.0-b409136c60-10c0.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:24.1.0"],\
+          ["undici-types", "npm:7.8.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@types/offscreencanvas", [\
@@ -3324,6 +3333,7 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/react", "virtual:3719237696b6c5827ddebc1c313604e42dddf505fadf2a2276d2c2cc13741dccc8564e95550ee4e9ba57ebf906f651ce2ed3283b9e6a839b54b46e378d942d5b#npm:11.2.7"],\
           ["@testing-library/user-event", "virtual:3719237696b6c5827ddebc1c313604e42dddf505fadf2a2276d2c2cc13741dccc8564e95550ee4e9ba57ebf906f651ce2ed3283b9e6a839b54b46e378d942d5b#npm:12.8.3"],\
           ["@types/gh-pages", "npm:6.1.0"],\
+          ["@types/node", "npm:24.1.0"],\
           ["@typescript-eslint/eslint-plugin", "virtual:3719237696b6c5827ddebc1c313604e42dddf505fadf2a2276d2c2cc13741dccc8564e95550ee4e9ba57ebf906f651ce2ed3283b9e6a839b54b46e378d942d5b#npm:8.24.0"],\
           ["@typescript-eslint/parser", "virtual:3719237696b6c5827ddebc1c313604e42dddf505fadf2a2276d2c2cc13741dccc8564e95550ee4e9ba57ebf906f651ce2ed3283b9e6a839b54b46e378d942d5b#npm:8.24.0"],\
           ["@vitejs/plugin-react", "virtual:3719237696b6c5827ddebc1c313604e42dddf505fadf2a2276d2c2cc13741dccc8564e95550ee4e9ba57ebf906f651ce2ed3283b9e6a839b54b46e378d942d5b#npm:4.3.4"],\
@@ -6235,6 +6245,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["undici-types", [\
+      ["npm:7.8.0", {\
+        "packageLocation": "../../../../../.yarn/berry/cache/undici-types-npm-7.8.0-86f3e2d23e-10c0.zip/node_modules/undici-types/",\
+        "packageDependencies": [\
+          ["undici-types", "npm:7.8.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["unique-filename", [\
       ["npm:4.0.0", {\
         "packageLocation": "../../../../../.yarn/berry/cache/unique-filename-npm-4.0.0-bfc100c4e3-10c0.zip/node_modules/unique-filename/",\
@@ -6323,7 +6342,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jiti", null],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
-          ["@types/node", null],\
+          ["@types/node", "npm:24.1.0"],\
           ["@types/sass", null],\
           ["@types/sass-embedded", null],\
           ["@types/stylus", null],\
