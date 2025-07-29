@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://*.sigmacomputing.com">
+    <!-- Remove restrictive CSP -->
     <title>DMA Map Plugin</title>
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
@@ -23,7 +23,7 @@
       }(window.location))
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
-    <script type="module" crossorigin src="https://jacksonfau1kner.github.io/dma_map_box_backup/assets/index.D2YIcZEJ.js"></script>
+    <script type="module" crossorigin src="https://jacksonfau1kner.github.io/dma_map_box_backup/assets/index.lm7Bjqgm.js"></script>
     <link rel="modulepreload" crossorigin href="https://jacksonfau1kner.github.io/dma_map_box_backup/assets/vendor.CAFDgmtb.js">
     <link rel="modulepreload" crossorigin href="https://jacksonfau1kner.github.io/dma_map_box_backup/assets/mapbox.DCPsyBfg.js">
     <link rel="modulepreload" crossorigin href="https://jacksonfau1kner.github.io/dma_map_box_backup/assets/deck.lVF-a0_D.js">
@@ -32,12 +32,21 @@
   <body>
     <div id="root"></div>
     <script>
-      // Handle iframe sandbox
-      window.addEventListener('message', function(event) {
-        if (event.origin.endsWith('sigmacomputing.com')) {
-          console.log('Received message from Sigma:', event.data);
-        }
-      }, false);
+      // Allow cross-origin communication
+      if (window.parent !== window) {
+        console.log('Running in iframe, setting up messaging...');
+        window.addEventListener('message', function(event) {
+          // Log all messages for debugging
+          console.log('Received message:', event.origin, event.data);
+          
+          // Allow Sigma messages
+          if (event.origin.includes('sigmacomputing.com')) {
+            console.log('Received Sigma message:', event.data);
+            // Respond to keep connection alive
+            event.source.postMessage({ type: 'plugin-ready' }, event.origin);
+          }
+        }, false);
+      }
     </script>
   </body>
 </html>
