@@ -2,7 +2,6 @@ import * as React from 'react';
 import {
   client,
   useConfig,
-  useElementColumns,
   useElementData,
 } from "@sigmacomputing/plugin";
 

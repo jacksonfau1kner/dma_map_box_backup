@@ -8,6 +8,7 @@ export default defineConfig({
     include: ["@sigmacomputing/plugin"],
   },
   plugins: [react(), svgr()],
+  base: '/dma_map_box_backup/',  // Updated for GitHub Pages
   server: {
     host: true,
     port: 5173,
