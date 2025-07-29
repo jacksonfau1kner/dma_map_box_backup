@@ -111,13 +111,6 @@ function App() {
     <div className="App" style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Header index={carouselIndex} setIndex={setCarouselIndex} count={carouselCount} kpiLabels={kpiLabels} startColor={headerStartColor} endColor={headerEndColor} minValue={minValue} maxValue={maxValue} />
       <div style={{ flex: 1, minHeight: 0, padding: 0, overflow: 'auto', width: '100%' }}>
-        {/* Debug information */}
-        <div style={{ position: 'fixed', bottom: 10, left: 10, background: 'rgba(0,0,0,0.8)', color: 'white', padding: 10, borderRadius: 5, fontSize: 12, zIndex: 1000 }}>
-          <div>IP: {userIp}</div>
-          <div>Config: {JSON.stringify(config, null, 2)}</div>
-          <div>Available KPIs: {JSON.stringify(availableKpiColumns.map(c => c.key))}</div>
-          <div>Data Rows: {sigmaData && config.dma ? sigmaData[config.dma].length : 0}</div>
-        </div>
         {carouselCount === 0 && (
           <div style={{ color: '#888', textAlign: 'center', marginTop: 40 }}>[No Numeric KPI Available]</div>
         )}
